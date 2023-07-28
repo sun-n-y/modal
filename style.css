@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('https://images.pexels.com/photos/169789/pexels-photo-169789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+.hero {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.open-btn {
+    background-color: greenyellow;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease;
+    display: block;
+    margin: 1rem auto;
+}
+
+.open-btn:hover {
+    background-color: white;
+    border: 1px solid blue;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    position: relative;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    transform: scale(1.5);
+}
+
+.hide-modal {
+    display: none;
+}
