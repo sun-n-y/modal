@@ -49,6 +49,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    visibility: hidden;
     display: grid;
     place-items: center;
     background-color: rgba(0, 0, 0, 0.39);
@@ -72,7 +73,7 @@ body {
     top: 0;
     right: 0;
     margin: 2rem;
-    transition: all 1s ease;
+    /* transition: all .5s ease; */
     cursor: pointer;
 }
 
@@ -80,6 +81,6 @@ body {
     transform: scale(1.5);
 }
 
-.hide-modal {
-    display: none;
+.show-modal {
+    visibility: visible;
 }
